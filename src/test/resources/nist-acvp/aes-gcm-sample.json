@@ -1,0 +1,75 @@
+{
+  "acvVersion": "1.0",
+  "vsId": 1150080127,
+  "algorithm": "AES-GCM",
+  "revision": "1.0",
+  "source": "https://github.com/usnistgov/ACVP-Server/tree/master/gen-val/json-files/ACVP-AES-GCM-1.0",
+  "testGroups": [
+    {
+      "tgId": 1,
+      "testType": "AFT",
+      "direction": "encrypt",
+      "keyLen": 256,
+      "ivLen": 96,
+      "payloadLen": 512,
+      "aadLen": 160,
+      "tagLen": 128,
+      "tests": [
+        {
+          "tcId": 1,
+          "comment": "Standard NIST ACVP AES-256-GCM Encryption Vector",
+          "key": "fe9bb32693ac279e6496952611994104fe9bb32693ac279e6496952611994104",
+          "iv": "cafebabefacedbaddecaf888",
+          "pt": "d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255",
+          "aad": "feedfacedeadbeeffeedfacedeadbeefabaddad2",
+          "ct": "a1beda694f6899adbb125d73109c701fc14bc9bc111dee317f79f87d255734d2454863714dd5e5e9b2dcce6b9a336a05abd196d6edaf82bd9e9c2b40b4fba9aa",
+          "tag": "aca6a55ccc24b82ffee9b390ebe97584"
+        }
+      ]
+    },
+    {
+      "tgId": 2,
+      "testType": "AFT",
+      "direction": "decrypt",
+      "keyLen": 256,
+      "ivLen": 96,
+      "payloadLen": 512,
+      "aadLen": 160,
+      "tagLen": 128,
+      "tests": [
+        {
+          "tcId": 2,
+          "comment": "Valid Decryption & Authenticity Test (Positive Case)",
+          "key": "fe9bb32693ac279e6496952611994104fe9bb32693ac279e6496952611994104",
+          "iv": "cafebabefacedbaddecaf888",
+          "aad": "feedfacedeadbeeffeedfacedeadbeefabaddad2",
+          "ct": "a1beda694f6899adbb125d73109c701fc14bc9bc111dee317f79f87d255734d2454863714dd5e5e9b2dcce6b9a336a05abd196d6edaf82bd9e9c2b40b4fba9aa",
+          "tag": "aca6a55ccc24b82ffee9b390ebe97584",
+          "expectedPt": "d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255",
+          "testPassed": true
+        },
+        {
+          "tcId": 3,
+          "comment": "Tampered Ciphertext (Bit-flipping Attack Negative Test) - Must Fail",
+          "key": "fe9bb32693ac279e6496952611994104fe9bb32693ac279e6496952611994104",
+          "iv": "cafebabefacedbaddecaf888",
+          "aad": "feedfacedeadbeeffeedfacedeadbeefabaddad2",
+          "ct": "b1beda694f6899adbb125d73109c701fc14bc9bc111dee317f79f87d255734d2454863714dd5e5e9b2dcce6b9a336a05abd196d6edaf82bd9e9c2b40b4fba9aa",
+          "tag": "aca6a55ccc24b82ffee9b390ebe97584",
+          "testPassed": false
+        },
+        {
+          "tcId": 4,
+          "comment": "Tampered Tag (Forged Auth Tag Negative Test) - Must Fail",
+          "key": "fe9bb32693ac279e6496952611994104fe9bb32693ac279e6496952611994104",
+          "iv": "cafebabefacedbaddecaf888",
+          "aad": "feedfacedeadbeeffeedfacedeadbeefabaddad2",
+          "ct": "a1beda694f6899adbb125d73109c701fc14bc9bc111dee317f79f87d255734d2454863714dd5e5e9b2dcce6b9a336a05abd196d6edaf82bd9e9c2b40b4fba9aa",
+          "tag": "00000000000000000000000000000000",
+          "testPassed": false
+        }
+      ]
+    }
+  ]
+}
+

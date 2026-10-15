@@ -1,0 +1,23 @@
+{
+  "dataset": "NIST ACVP Test Vectors (Selective Extraction)",
+  "source_repository": "https://github.com/usnistgov/ACVP-Server",
+  "branch_path": "gen-val/json-files/",
+  "license": "NIST Software License (Public Domain / 17 U.S.C. 105)",
+  "student": "Trần Phạm Thiên Ân",
+  "student_id": "1150080127",
+  "generated_at": "2026-10-15T03:29:50Z",
+  "files": [
+    {
+      "name": "aes-gcm-sample.json",
+      "algorithm": "AES-GCM-256",
+      "sha256": "375f3a961ad78555c620b27031b980810b29379f7a2053e0b2de6a7e4364b519",
+      "size_bytes": 3100
+    },
+    {
+      "name": "rsa-oaep-sample.json",
+      "algorithm": "RSA-OAEP-2048",
+      "sha256": "3ea5a9d27c60fb7ffc1a7bd5b7ba087d2740e41c4c689302bf9f1b48fdc3d1d8",
+      "size_bytes": 647
+    }
+  ]
+}

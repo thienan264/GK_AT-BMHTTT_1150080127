@@ -1,0 +1,26 @@
+{
+  "acvVersion": "1.0",
+  "vsId": 1150080127,
+  "algorithm": "RSA",
+  "mode": "DecryptionPrimitive",
+  "revision": "1.0",
+  "source": "https://github.com/usnistgov/ACVP-Server/tree/master/gen-val/json-files/RSA-DecryptionPrimitive-1.0",
+  "testGroups": [
+    {
+      "tgId": 1,
+      "modulo": 2048,
+      "hashAlg": "SHA-256",
+      "mgf": "MGF1",
+      "tests": [
+        {
+          "tcId": 1,
+          "comment": "RSA-OAEP Wrap/Unwrap Symmetric Key Verification",
+          "e": "010001",
+          "plainKeyHex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+          "testPassed": true
+        }
+      ]
+    }
+  ]
+}
+

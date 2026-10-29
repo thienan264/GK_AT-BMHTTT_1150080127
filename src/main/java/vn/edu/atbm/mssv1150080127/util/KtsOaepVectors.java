@@ -1,0 +1,78 @@
+package vn.edu.atbm.mssv1150080127.util;
+
+import com.google.gson.*;
+import java.nio.file.*;
+import java.math.BigInteger;
+import java.security.*;
+import java.security.spec.*;
+import java.util.*;
+import vn.edu.atbm.mssv1150080127.crypto.RsaKeyManager;
+import vn.edu.atbm.mssv1150080127.crypto.SecurePackageEngine;
+
+/** RSA-2048/OAEP SHA-256, empty label, AES-256: exact package configuration. */
+public final class KtsOaepVectors {
+    public static final Path BASE=Path.of("src/test/resources/nist-acvp/generated-kts-sha256");
+    public static List<JsonObject> cases() throws Exception {
+        var root=JsonParser.parseString(Files.readString(BASE.resolve("internalProjection.json"))).getAsJsonObject();
+        List<JsonObject> result=new ArrayList<>();
+        for(var element:root.getAsJsonArray("testGroups")) {
+            var group=element.getAsJsonObject();
+            if(!group.get("scheme").getAsString().equals("KTS-OAEP-basic")
+                    || group.get("modulo").getAsInt()!=2048 || group.get("l").getAsInt()!=256
+                    || !group.getAsJsonObject("ktsConfiguration").get("hashAlg").getAsString().equals("SHA2-256")
+                    || !group.getAsJsonObject("ktsConfiguration").get("encoding").getAsString().equals("none"))
+                throw new IllegalArgumentException("KTS parameters do not match package v1");
+            for(var elementCase:group.getAsJsonArray("tests")) {
+                var tc=elementCase.getAsJsonObject().deepCopy();
+                tc.addProperty("sourceGroup",group.get("tgId").getAsInt());
+                tc.addProperty("sourceRole",group.get("kasRole").getAsString());
+                result.add(tc);
+            }
+        }
+        if(result.size()!=20)throw new IllegalArgumentException("Expected 20 generated KTS cases");
+        return result;
+    }
+    private static boolean initiator(JsonObject tc){return tc.get("sourceRole").getAsString().equals("initiator");}
+    private static BigInteger integer(JsonObject tc,String name){return new BigInteger(tc.get(name).getAsString(),16);}
+    public static byte[] expected(JsonObject tc){return HexFormat.of().parseHex(tc.get(initiator(tc)?"iutK":"serverK").getAsString());}
+    public static byte[] actual(JsonObject tc) throws Exception {
+        String prefix=initiator(tc)?"server":"iut";
+        var key=KeyFactory.getInstance("RSA").generatePrivate(new RSAPrivateKeySpec(integer(tc,prefix+"N"),integer(tc,prefix+"D")));
+        byte[] ciphertext=HexFormat.of().parseHex(tc.get(initiator(tc)?"iutC":"serverC").getAsString());
+
+        return RsaKeyManager.unwrapKey(ciphertext,key).getEncoded();
+    }
+    public static void verify(JsonObject tc) throws Exception {
+        if(!Arrays.equals(expected(tc),actual(tc)))throw new SecurityException("NIST-generated OAEP SHA-256 answer mismatch");
+    }
+    /** Fresh IUT responses for the unmodified NIST validator: wrap and unwrap are both production calls. */
+    public static void main(String[] args) throws Exception {
+        Path output=args.length==0?BASE.resolve("iutResponses.json"):Path.of(args[0]);
+        var prompt=JsonParser.parseString(Files.readString(BASE.resolve("prompt.json"))).getAsJsonObject();
+        var internal=JsonParser.parseString(Files.readString(BASE.resolve("internalProjection.json"))).getAsJsonObject();
+        var root=new JsonObject();
+        for(String name:List.of("vsId","algorithm","revision","isSample"))root.add(name,prompt.get(name));
+        var groups=new JsonArray();
+        for(var element:internal.getAsJsonArray("testGroups")) {
+            var group=element.getAsJsonObject();var responseGroup=new JsonObject();
+            responseGroup.add("tgId",group.get("tgId"));var answers=new JsonArray();
+            boolean wrap=group.get("kasRole").getAsString().equals("initiator");
+            for(var entry:group.getAsJsonArray("tests")) {
+                var tc=entry.getAsJsonObject().deepCopy();tc.addProperty("sourceRole",group.get("kasRole").getAsString());
+                var answer=new JsonObject();answer.add("tcId",tc.get("tcId"));
+                if(wrap) {
+                    var publicKey=KeyFactory.getInstance("RSA").generatePublic(new RSAPublicKeySpec(integer(tc,"serverN"),integer(tc,"serverE")));
+                    var aes=SecurePackageEngine.generateAesKey();
+                    byte[] wrapped=RsaKeyManager.wrapKey(aes,publicKey);
+                    answer.addProperty("iutC",HexFormat.of().formatHex(wrapped));
+                    answer.addProperty("dkm",HexFormat.of().formatHex(aes.getEncoded()));
+                } else answer.addProperty("dkm",HexFormat.of().formatHex(actual(tc)));
+                answers.add(answer);
+            }
+            responseGroup.add("tests",answers);groups.add(responseGroup);
+        }
+        root.add("testGroups",groups);
+        Files.writeString(output,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");
+        System.out.println("Wrote 10 production wrap + 10 production unwrap responses: "+output);
+    }
+}

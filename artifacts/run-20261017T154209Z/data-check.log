@@ -1,0 +1,1 @@
+ACVP manifest OK: {'aes_cases': 120, 'aes_counts': {'encrypt_positive': 60, 'decrypt_positive': 40, 'decrypt_negative': 20}, 'duplicate_cases': 0, 'kts_cases': 20, 'kts_configuration': 'RSA-2048, SHA-256/MGF1-SHA-256, empty label, 256-bit keying material'}

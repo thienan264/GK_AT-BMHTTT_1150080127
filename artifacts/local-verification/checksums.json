@@ -1,0 +1,46 @@
+[
+  {
+    "name": "TEST-vn.edu.atbm.mssv1150080127.AesGcmVectorTest.xml",
+    "sha256": "842aac770f711a3396443245b4a7df26133372fadebe7d1ecaa5ce93477b5ef8"
+  },
+  {
+    "name": "TEST-vn.edu.atbm.mssv1150080127.DatasetIntegrityTest.xml",
+    "sha256": "80e6de67221b20ee343f7c7451f47cba40aedcbee2f5db24887b97a93aeadd7c"
+  },
+  {
+    "name": "TEST-vn.edu.atbm.mssv1150080127.RsaOaepInteropTest.xml",
+    "sha256": "651646272592ee47acb28208cae586568eb8f9543e04ba76d88bf13c4f75e7fb"
+  },
+  {
+    "name": "TEST-vn.edu.atbm.mssv1150080127.RsaOaepVectorTest.xml",
+    "sha256": "3fe6f0534ca10de083f2f56d6dfb99debdfb131623cab0dbdc918992275b440c"
+  },
+  {
+    "name": "TEST-vn.edu.atbm.mssv1150080127.SecurePackageTest.xml",
+    "sha256": "298450ed3a980d0bc02db37e8ff7089ee303db57d23d0a21e0b37754ff716c31"
+  },
+  {
+    "name": "TEST-vn.edu.atbm.mssv1150080127.SignedPackageTest.xml",
+    "sha256": "3d5a063dcce663a51c6294a48d28f8336dccc51fd3094619c9fc69b70319c396"
+  },
+  {
+    "name": "TEST-vn.edu.atbm.mssv1150080127.WebValidationTest.xml",
+    "sha256": "6514e4547151602e37c662cb8d44511a61db1edac056fe45140d6aa1b7310d0a"
+  },
+  {
+    "name": "http-integration.log",
+    "sha256": "5e243a76e191de26600bd2e68c0dd0a7c90725e17e22cf1747c42ef9b2e15da5"
+  },
+  {
+    "name": "source-manifest.json",
+    "sha256": "71618dd3f71922d51375c6bb77af40956a4fc55dc3b48332a03dd1ac65cacb3e"
+  },
+  {
+    "name": "test-cases.json",
+    "sha256": "618cf40289263d6d817b8305ea4a7b2351d39db4151b41c9faa1ef7e9b10ca7b"
+  },
+  {
+    "name": "verification.json",
+    "sha256": "52175467e404dc4e8704df428288f4706680f75627b06983e0893b43fa57ae1c"
+  }
+]

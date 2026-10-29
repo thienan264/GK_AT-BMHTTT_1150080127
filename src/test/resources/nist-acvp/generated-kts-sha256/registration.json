@@ -1,0 +1,29 @@
+{
+  "vsId": 0,
+  "algorithm": "KTS-IFC",
+  "revision": "Sp800-56Br2",
+  "isSample": true,
+  "iutId": "123456ABCD",
+  "fixedPubExp": "010001",
+  "keyGenerationMethods": [
+    "rsakpg1-basic"
+  ],
+  "modulo": [
+    2048
+  ],
+  "scheme": {
+    "kts-OAEP-basic": {
+      "kasRole": [
+        "initiator",
+        "responder"
+      ],
+      "ktsMethod": {
+        "hashAlgs": [
+          "SHA2-256"
+        ],
+        "supportsNullAssociatedData": true
+      },
+      "l": 256
+    }
+  }
+}

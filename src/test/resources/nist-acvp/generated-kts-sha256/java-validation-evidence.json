@@ -1,0 +1,15 @@
+{
+  "validated_at": "2026-10-17T15:39:19.229942+00:00",
+  "kind": "local NIST GenVal validator, not NIST-issued validation",
+  "passed_cases": 20,
+  "wrap_cases": 10,
+  "unwrap_cases": 10,
+  "negative_control": "one submitted dkm byte modified; validator must reject",
+  "source_sha256": {
+    "src/main/java/vn/edu/atbm/mssv1150080127/crypto/RsaKeyManager.java": "5b7e8894fb4271c07b5718532b4d3a700033e63358654ad68afd3ed8e82157c0",
+    "src/main/java/vn/edu/atbm/mssv1150080127/crypto/RsaOaep.java": "516c2e605f141177638cfe616f3d539dcdbf1881a1710cc13ab0128d867f2470",
+    "src/main/java/vn/edu/atbm/mssv1150080127/util/KtsOaepVectors.java": "f0f7616ef9eb8bb351ca87ef024f2de55953ef6710716c54b0e37f230b934eec"
+  },
+  "iutResponses_sha256": "ee023640d2f8f33c74173cf6c33049d41a6b6887c635685084dbec8a1c6f2f79",
+  "validation_sha256": "299b62799697468a75d3736bd699895c17479dac6dc74bb2763a191ae0eb4113"
+}

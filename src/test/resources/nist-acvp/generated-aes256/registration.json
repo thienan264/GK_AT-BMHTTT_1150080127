@@ -1,0 +1,32 @@
+{
+  "vsId": 0,
+  "algorithm": "ACVP-AES-GCM",
+  "revision": "1.0",
+  "isSample": true,
+  "direction": [
+    "encrypt",
+    "decrypt"
+  ],
+  "keyLen": [
+    256
+  ],
+  "ivLen": [
+    96
+  ],
+  "payloadLen": [
+    0,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "aadLen": [
+    0,
+    128,
+    256
+  ],
+  "tagLen": [
+    128
+  ],
+  "ivGen": "external"
+}

@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/usnistgov/ACVP-Server",
+  "commit": "975de31eb83d87039ec88934fdc47d8c312b892d",
+  "requires": ".NET 8 SDK, network for NuGet restore, local socket access for Orleans",
+  "source_setup": "Copy _config/Directory.Build.props and _config/Directory.Packages.props to repository root; no .cs source edits.",
+  "build": [
+    "dotnet build gen-val/samples/GenValAppRunner/src/NIST.CVP.ACVTS.Generation.GenValApp.csproj -c Release -p:NuGetAudit=false",
+    "dotnet build gen-val/samples/NIST.CVP.ACVTS.Orleans.ServerHost/NIST.CVP.ACVTS.Orleans.ServerHost.csproj -c Release -p:NuGetAudit=false"
+  ],
+  "start_host": "dotnet gen-val/samples/NIST.CVP.ACVTS.Orleans.ServerHost/bin/Release/net8.0/NIST.CVP.ACVTS.Orleans.ServerHost.dll",
+  "generate_from_project": "python3 scripts/generate_nist_vectors.py --source <extracted-NIST-source>",
+  "validate_java_responses": "python3 scripts/generate_nist_vectors.py --source <extracted-NIST-source> --validate",
+  "randomness": "Fresh NIST generator randomness; frozen outputs and hashes provide repeatable Java tests. Regeneration creates different valid vectors; do not require equal output hashes."
+}

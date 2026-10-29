@@ -1,0 +1,14 @@
+{
+  "purpose": "Reference toolchain; actual versions captured per run. Not an OS/container lock.",
+  "jdk": {
+    "major": 21,
+    "tested": "Oracle JDK 21.0.9+7-LTS-338"
+  },
+  "maven": "3.9.12",
+  "python": "3.9.6 (stdlib only)",
+  "openssl_cli": "LibreSSL 3.3.6 (pkeyutl compatible)",
+  "os": "macOS 15.6.1 aarch64",
+  "dependencies": "Exact versions in pom.xml; Maven resolves its transitive dependency graph.",
+  "seed": 42,
+  "crypto_randomness": "SecureRandom, not seeded for repeatability"
+}

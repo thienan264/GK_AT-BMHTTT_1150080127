@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.153" tests="121" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT/target/test-classes:/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT/target/classes:/Users/thienan/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/thienan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/thienan/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/thienan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/thienan/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="VN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT/target/surefire/surefirebooter-20261029110057205_3.jar /Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT/target/surefire 2026-10-29T11-00-57_154-jvmRun1 surefire-20261029110057205_1tmp surefire_0-20261029110057205_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT/target/test-classes:/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT/target/classes:/Users/thienan/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/thienan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/thienan/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/thienan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/thienan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/thienan/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/thienan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT/target/surefire/surefirebooter-20261029110057205_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2"/>
+    <property name="user.name" value="thienan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/thienan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/9_/dj32sl2j52gbc6s5jf6148xh0000gn/T/"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="/Users/thienan/Desktop/1150080127_TranPhamThienAn_DT002_GK_AT&amp;BMHTTT"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/thienan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.2"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="assertionsReallyRejectWrongAnswers" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.069"/>
+  <testcase name="nistCases()[1]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[2]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[3]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[4]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[5]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[6]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[7]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[8]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[9]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[10]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[11]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[12]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[13]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[14]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[15]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[16]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[17]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[18]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[19]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[20]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[21]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[22]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[23]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[24]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[25]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[26]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[27]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[28]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[29]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[30]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[31]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[32]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[33]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[34]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[35]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[36]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[37]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[38]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[39]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[40]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[41]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[42]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[43]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[44]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[45]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[46]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[47]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[48]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[49]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[50]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[51]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[52]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[53]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[54]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[55]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[56]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[57]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[58]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[59]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[60]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[61]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[62]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[63]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[64]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[65]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[66]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[67]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[68]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[69]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[70]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[71]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[72]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[73]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[74]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[75]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[76]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[77]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[78]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[79]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[80]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[81]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[82]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[83]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[84]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[85]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[86]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[87]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[88]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[89]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[90]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[91]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[92]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[93]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[94]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[95]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[96]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[97]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[98]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[99]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[100]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[101]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[102]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[103]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[104]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[105]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[106]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[107]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[108]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[109]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[110]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[111]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[112]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[113]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[114]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[115]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[116]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[117]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+  <testcase name="nistCases()[118]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[119]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.0"/>
+  <testcase name="nistCases()[120]" classname="vn.edu.atbm.mssv1150080127.AesGcmVectorTest" time="0.001"/>
+</testsuite>

@@ -13,6 +13,7 @@ import java.util.zip.GZIPOutputStream;
  * Tác giả: Trần Phạm Thiên Ân - MSSV: 1150080127
  */
 public class GzipUtil {
+    public static final int MAX_DECOMPRESSED_BYTES = 20 * 1024 * 1024;
 
     /**
      * Nén mảng byte bằng luồng GZIPOutputStream.
@@ -50,7 +51,9 @@ public class GzipUtil {
             byte[] buffer = new byte[4096];
             int bytesRead;
             while ((bytesRead = gzipIn.read(buffer)) != -1) {
-                byteOut.write(buffer, 0, bytesRead);
+                if (bytesRead > MAX_DECOMPRESSED_BYTES - byteOut.size())
+                throw new IOException("Decompressed data exceeds 20 MiB");
+            byteOut.write(buffer, 0, bytesRead);
             }
         }
         return byteOut.toByteArray();

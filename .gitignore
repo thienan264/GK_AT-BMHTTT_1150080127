@@ -1,2 +1,17 @@
 target/
 .DS_Store
+
+__pycache__/
+*.pyc
+
+# Private demo identities, passwords and local runtime material
+.local-keys/
+*.p12
+*.pfx
+*.key
+.env
+
+dist/
+
+**/LAB9*
+~$*

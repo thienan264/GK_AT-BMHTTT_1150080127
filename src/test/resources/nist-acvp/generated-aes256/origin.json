@@ -1,0 +1,19 @@
+{
+  "kind": "locally-generated-by-NIST-GenVal",
+  "repository": "https://github.com/usnistgov/ACVP-Server",
+  "commit": "975de31eb83d87039ec88934fdc47d8c312b892d",
+  "generated_at": "2026-10-17T15:35:50.678405+00:00",
+  "command": [
+    "dotnet",
+    "<pinned-source>/gen-val/samples/GenValAppRunner/src/bin/Release/net8.0/NIST.CVP.ACVTS.Generation.GenValApp.dll",
+    "-g",
+    "generated-aes256/registration.json"
+  ],
+  "dotnet": "9.0.304",
+  "generator_binary_sha256": {
+    "NIST.CVP.ACVTS.Generation.GenValApp.dll": "be717599fc483bf84c45eeeab60c5fac84ba860aac23d204236a052c4e2a9f98",
+    "NIST.CVP.ACVTS.Libraries.Generation.dll": "e363a101e126ce5393924b2f19bc10b9f88b99257823862e746837173c882f7b",
+    "NIST.CVP.ACVTS.Libraries.Crypto.dll": "3a98bc04f1bf0a7cc91c0651edd063dcecad383d6b190882dcb6d9fdd26218cf"
+  },
+  "notice": "Generated locally using NIST source, NOT downloaded pre-existing vectors and NOT NIST certification. Registration selects parameters; NIST generator computes independent expected answers. Source code unmodified; config props copied as documented by upstream."
+}

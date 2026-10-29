@@ -1,0 +1,8 @@
+PASS: public-key import rejects mismatched fingerprint and accepts explicitly confirmed fingerprint.
+PASS: local HTTP only; cross-origin POST rejected; sender has no Bob private key; no TLS files required.
+PASS: receiver restart 1 decrypts saved sender package; tampering/wrong recipient/trailing bytes rejected; 140 reference cases pass.
+PASS: receiver restart 2 decrypts saved sender package; tampering/wrong recipient/trailing bytes rejected; 140 reference cases pass.
+PASS: documented demo.py run launcher starts local HTTP with configured identities.
+HTTP localhost PASS: baseline/GZIP round-trip, downloads, wrong key, changed signature, trailing bytes, 140 live reference cases.
+PASS: zero-byte file survives local HTTP signed round-trip.
+PASS: wrong keystore password refuses startup without replacing keys.

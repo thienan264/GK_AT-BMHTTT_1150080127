@@ -1,0 +1,246 @@
+[
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/crypto/AesGcm.java",
+    "sha256": "5d5736552a2ff7fb7c376ff74dc0eaae167885313169bd264498cf6d69818eed"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/crypto/GzipUtil.java",
+    "sha256": "0ce74afb4893e0e82a8ddc4115531a055773e49885aae4c1c01f1facd1756fc0"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/crypto/RsaKeyManager.java",
+    "sha256": "5b7e8894fb4271c07b5718532b4d3a700033e63358654ad68afd3ed8e82157c0"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/crypto/RsaOaep.java",
+    "sha256": "516c2e605f141177638cfe616f3d539dcdbf1881a1710cc13ab0128d867f2470"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/crypto/SecurePackageEngine.java",
+    "sha256": "8396392f6d0f7049d433fb622e8ae7e351fe22cbcf4e0857e8a79c05a23c5614"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/experiment/MidtermBenchmark.java",
+    "sha256": "d4c9738d2c441e30109c020daec2e42b1df5dba9ef8bdd797982dd97198438e4"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/model/SecurePackageResult.java",
+    "sha256": "61341edab1c6d287e078840b7802d49f9fdbd6507f8eb628318f254a0a8caa6b"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/util/AesGcmVectorVerifier.java",
+    "sha256": "cb67ed073beef6b320f086a3fa66943e73f3b6d6e6870d98b1e60f2b988a3933"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/util/KtsOaepVectors.java",
+    "sha256": "f0f7616ef9eb8bb351ca87ef024f2de55953ef6710716c54b0e37f230b934eec"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/util/NistAcvpParser.java",
+    "sha256": "63e52ca0cf8e9530189247397fa3b5a07cf6b74165568fb55016c1cac7b0376e"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/util/ReferenceChecks.java",
+    "sha256": "69115a8aa01abac9c9f5e121a89593b467a1288146e8add782185c4507233c80"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/web/WebServerApp.java",
+    "sha256": "1d7c4b2c728ded65aae64691725c5b244a4f62f4f73098550b40d428b823c0bd"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/web/controller/CryptoApiController.java",
+    "sha256": "453d494556ab138c45be34176141d48b181ffbf0e8a066d3f016f19eeb3072f5"
+  },
+  {
+    "name": "src/main/java/vn/edu/atbm/mssv1150080127/web/service/CryptoWebService.java",
+    "sha256": "facca423b45d103cd8240fc32db8b89001a71fb3b7dbb558b4e806c31f61a736"
+  },
+  {
+    "name": "src/main/resources/static/index.html",
+    "sha256": "92e9159181b21b3228e65e53b68dac34d527e4793558b0981964d01fdd1c9fa2"
+  },
+  {
+    "name": "src/test/java/vn/edu/atbm/mssv1150080127/AesGcmVectorTest.java",
+    "sha256": "1a5fdf12cedcab32157fac2e5a4989991c25645f02af71773d98bee49d6a2c98"
+  },
+  {
+    "name": "src/test/java/vn/edu/atbm/mssv1150080127/DatasetIntegrityTest.java",
+    "sha256": "be2e144edadd1162b6e151ac3cd0a789ea0a841cc367d590e6d57d320ea88c8a"
+  },
+  {
+    "name": "src/test/java/vn/edu/atbm/mssv1150080127/RsaOaepInteropTest.java",
+    "sha256": "77825b71590e1d0cec0195f923eeff510e6a60cf4b3ddbfa4b8c34de419ee67e"
+  },
+  {
+    "name": "src/test/java/vn/edu/atbm/mssv1150080127/RsaOaepVectorTest.java",
+    "sha256": "072ad732195c3eb6922402da8fa11b2860019aa902a39f1c485d99cd1302cb72"
+  },
+  {
+    "name": "src/test/java/vn/edu/atbm/mssv1150080127/SecurePackageTest.java",
+    "sha256": "828daa7ea255ce13f17db5d50dd6cc79da9e05ce03d236ef5eee8e241ee76d2f"
+  },
+  {
+    "name": "src/test/java/vn/edu/atbm/mssv1150080127/WebValidationTest.java",
+    "sha256": "3074cb14753a5462adbb0204737cffc5f3d2a59e1fb24d005165e477bc892f9e"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/aes-gcm-sample.json",
+    "sha256": "291de94acc6ccc992c6057d58b6e325961f447b4097e43ba0fbc05165998f5f0"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-aes256/expectedResults.json",
+    "sha256": "4c5f65f2a4439f75a23ae4aa9e7fed8534276c66f5d635e604b0e075201d7d45"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-aes256/generation.log",
+    "sha256": "4ac734e92c1ab2475a2e3c18c5384729cd35c53900e96c70f2f045c4adb96f12"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-aes256/internalProjection.json",
+    "sha256": "291de94acc6ccc992c6057d58b6e325961f447b4097e43ba0fbc05165998f5f0"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-aes256/origin.json",
+    "sha256": "a03e3f7d6f57565b70db6be46e194788c24f54d46d6e65b061b485d387f0ccc0"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-aes256/prompt.json",
+    "sha256": "cd2e82af37498571cc574d43f6ef06bab9455e962f18b345fd4a60548f6c1a62"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-aes256/registration.json",
+    "sha256": "339feb0f7ed9c2b56d8a25c49f9dcddaedb8b737198f39a442c51de830b66de0"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/Validate.log",
+    "sha256": "b40da8ec1476dd4820e6158d04785c08426a9814750336d48625ce0822a84349"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/expectedResults.json",
+    "sha256": "53aaebf3629d8035d1245cf02944c8396389ceb02014fe8857641389ffd02713"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/generation.log",
+    "sha256": "b629fd94bfb91b2400f9ccee8c63b2a402c5aec722d270587f81a4107b61b7dc"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/internalProjection.json",
+    "sha256": "2a9a31a7650ac7d59bab4fbf62751be885c1b4b6f7f9726f70fba228fadcdb5d"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/iutResponses.json",
+    "sha256": "ee023640d2f8f33c74173cf6c33049d41a6b6887c635685084dbec8a1c6f2f79"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/java-validation-evidence.json",
+    "sha256": "be38d27bf473b3a3e0188e1a4497d15011c9e49500472ea476f549ad9358b9cd"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/negative-validation.json",
+    "sha256": "cc936afe59f464e8071766435066efbac5b40daa825774f0e9df5a0e07c3bddc"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/negative-validation.log",
+    "sha256": "542bc2673669640652c4fa6fb8ba87c813463145cff0cefa2ab9a40cee5bf789"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/negativeResponses.json",
+    "sha256": "521846d31e851bf2e9d4f45a7a313ecf90710f9d382237d9958e69a5341568d7"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/origin.json",
+    "sha256": "97b03175470a6cd13454e8bd3994f9c9893bf38305685cf146e7c961ddb4495b"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/prompt.json",
+    "sha256": "3813de78b78381a80969a13f77183d3687d9308501d53971e2d9171772c1d162"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/registration.json",
+    "sha256": "b961b4e625d6c36ea7696fa15b4d00877fa6b570dec8f50c2743f7694ec9d0ba"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/validation.json",
+    "sha256": "299b62799697468a75d3736bd699895c17479dac6dc74bb2763a191ae0eb4113"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/generated-kts-sha256/validation.log",
+    "sha256": "542bc2673669640652c4fa6fb8ba87c813463145cff0cefa2ab9a40cee5bf789"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/manifest.json",
+    "sha256": "4b42328ad89ac75f21f1e4fdb92221b4b7af6d5fb9423f216b39fb0cde618b35"
+  },
+  {
+    "name": "src/test/resources/nist-acvp/upstream/NIST-NOTICE.txt",
+    "sha256": "d5a569884ee83bd1c4737042d0a2cc7d68c6950690f75a73ef14f505a9aa3555"
+  },
+  {
+    "name": "scripts/create_documents.py",
+    "sha256": "4ba677f79eceb086097fb92dbf11b0021b29bb6d883bcb96a57a7662cd86a027"
+  },
+  {
+    "name": "scripts/generate_nist_vectors.py",
+    "sha256": "554754e8dfa7fc5e0e0ada47a98a55cd107445605a0f41164cd9eb3a42f92fd6"
+  },
+  {
+    "name": "scripts/package_evidence.py",
+    "sha256": "5e35279828f3af526b52321e5484642c53439066429a6474ef6d204243658214"
+  },
+  {
+    "name": "scripts/prepare_acvp.py",
+    "sha256": "992de930235b8e90c77ccd8a22f28b9715ba53d6e2c08b55932ef7164d56d1ca"
+  },
+  {
+    "name": "scripts/run_midterm.sh",
+    "sha256": "190959deb36c90e4ee0255a02f6fb30e01528bcf5f6c650cd88a82afd398e26c"
+  },
+  {
+    "name": "scripts/setup_nist_source.py",
+    "sha256": "8b174a693c5f4ea9026356d0557e04e8d3d7c5d39e53e668d1ea6c654703984e"
+  },
+  {
+    "name": "scripts/smoke_web.py",
+    "sha256": "e3caec6b91f6708c0fb665029427486f9beb2d7230cf2c5924f460ab74aef828"
+  },
+  {
+    "name": "scripts/summarize_results.py",
+    "sha256": "97fe4c5599b4dc34ea4750a1f476306bf8e81e1770c6f90b1da7887c519a6d7d"
+  },
+  {
+    "name": "scripts/tamper_file.py",
+    "sha256": "5a73ad661837b20338686ff45abca95b7af103e6f94941db73c944aab741fb55"
+  },
+  {
+    "name": "scripts/verify_data.py",
+    "sha256": "b7d5c15f83c07e535b96c0b07a853a3a6d883b824d190adf51d5df52f1e68412"
+  },
+  {
+    "name": "scripts/word_document.py",
+    "sha256": "3e3a90b966b6db17dd10d429aa9a8a0f213f477e674314e75d104030dc936da8"
+  },
+  {
+    "name": "tools/nist-generation/config.json",
+    "sha256": "57412ca59b672a584a2868864ac98bc92d08da27ab980adb073e0f65ebd07c63"
+  },
+  {
+    "name": "docs/01_Lam_chu_kiem_thu_NIST.docx",
+    "sha256": "b01e927a3ff0e994cee5a4f2a1833149509ef49457e2aa90dca92abd5bdb2504"
+  },
+  {
+    "name": "docs/02_Bao_cao_tien_do.docx",
+    "sha256": "0fc7f094428a987ea1d57ea8a2b1bffb7b2677f33c58d7b8bf726ee1320d771f"
+  },
+  {
+    "name": "README.docx",
+    "sha256": "93ae1fdd959b8ce4acdb01927ee31c3ab3fe45df690e2e312fbc6e4e796ad2f1"
+  },
+  {
+    "name": "pom.xml",
+    "sha256": "eb68241a2b7346fc70f1db809a258ef0de806d7c9c6a6ef3434a13b42f23ff4c"
+  },
+  {
+    "name": "environment.lock.json",
+    "sha256": "9c1653411733376df4c4b04a6afb39a4485aaa6affc46419838251f7db5030ba"
+  }
+]

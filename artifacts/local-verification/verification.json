@@ -1,0 +1,13 @@
+{
+  "scope": "Local loopback HTTP, persistent PKCS12 keys, signed SSP2 packages",
+  "junit": {
+    "tests": 157,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "integration": "http-integration.log",
+  "source_evidence": "Historical NIST source hashes kept; KtsOaepVectors snapshot checked to allow only standalone comment removal",
+  "security_limits": "Trusted local operator; no replay protection, automatic revocation, malware scanning or security certification",
+  "benchmark": "Historical SECP v1 only; no performance claim for signed envelope"
+}
